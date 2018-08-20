@@ -11,7 +11,7 @@ class Posts extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      sort: ["hot", "top", "controversial", "recent", "rising"],
+      sort: ["hot", "top", "controversial", "new", "rising"],
       linksFrom: [
         "past hour",
         "past day",
@@ -99,44 +99,3 @@ export default connect(
   mapStateToProps,
   { fetchSubredditPosts, setSortBy, setLinksFrom }
 )(Posts);
-
-// render() {
-//   return (
-//     <React.Fragment>
-//       <div className="col col-sm-12 col-lg-3 mb-4">
-//         <label>Sort by:</label>
-//         <select
-//           className="custom-select mb-3"
-//           value={this.props.currentSortKey}
-//           onChange={this.props.onSortChange}
-//         >
-//           {this.props.sort.map(sortKey => (
-//             <option key={sortKey} value={sortKey}>
-//               {sortKey}
-//             </option>
-//           ))}
-//         </select>
-//       </div>
-//       <div className="col col-sm-12 col-lg-3">
-//         <label>Links from:</label>
-//         <select
-//           className="custom-select mb-3"
-//           value={this.props.currentLinksFrom}
-//           onChange={this.props.onLinksFromChange}
-//         >
-//           {this.props.linksFrom.map(link => (
-//             <option key={link} value={link}>
-//               {link}
-//             </option>
-//           ))}
-//         </select>
-//       </div>
-
-//       <div className="col col-sm-12">
-//         {/* {this.props.posts.map(post => (
-//           <Post key={post.data.id} post={post.data} />
-//         ))} */}
-//       </div>
-//     </React.Fragment>
-//   );
-// }

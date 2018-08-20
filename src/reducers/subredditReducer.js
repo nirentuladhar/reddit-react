@@ -6,7 +6,7 @@ import {
 } from "../actions/types";
 
 const initialState = {
-  name: "askreddit",
+  name: "pics",
   posts: [],
   sortBy: "hot",
   linksFrom: ""

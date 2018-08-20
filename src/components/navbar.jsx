@@ -33,7 +33,7 @@ class NavBar extends Component {
           <input
             className="form-control mr-sm-2"
             type="search"
-            placeholder="Search"
+            placeholder="Search subreddit"
             aria-label="Search"
             onChange={e => this.onInputChange(e)}
           />
@@ -41,7 +41,7 @@ class NavBar extends Component {
             className="btn btn-outline-primary my-2 my-sm-0"
             type="submit"
           >
-            Search
+            Go
           </button>
         </form>
       </nav>
