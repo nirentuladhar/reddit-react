@@ -1,0 +1,5 @@
+export const FETCH_SUBREDDIT_POSTS = "FETCH_SUBREDDIT_POSTS";
+export const SET_SUBREDDIT = "SET_SUBREDDIT";
+export const FETCH_URL = "FETCH_URL";
+export const SET_SORT_BY = "SET_SORT_BY";
+export const SET_LINKS_FROM = "FETCH_LINKS_FROM";

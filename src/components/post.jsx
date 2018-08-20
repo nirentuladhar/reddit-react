@@ -18,7 +18,6 @@ class Post extends Component {
               {this.props.post.author}
             </a>{" "}
           </p>
-          <span isNsfw />
 
           <button type="button" className="btn btn-primary btn-sm">
             {this.props.post.num_comments + " comments"}
