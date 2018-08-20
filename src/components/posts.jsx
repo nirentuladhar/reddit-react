@@ -68,12 +68,18 @@ class Posts extends Component {
     );
     return (
       <div>
-        <div className="col col-sm-12 col-lg-3 mb-4">{selectSortBy}</div>
-        {(this.props.sortBy === "top" ||
-          this.props.sortBy === "controversial") && (
-            <div className="col col-sm-12 col-lg-3">{selectLinksFrom}</div>
-          )}
         <div className="col col-sm-12">
+          <div className="row">
+            <div className="col col-sm-4 col-lg-3">{selectSortBy}</div>
+            {(this.props.sortBy === "top" ||
+              this.props.sortBy === "controversial") && (
+              <div className="col col-sm-4 col-lg-3">{selectLinksFrom}</div>
+            )}
+          </div>
+        </div>
+        <hr />
+
+        <div className="col col-sm-12 mt-4">
           {this.props.posts.map(post => (
             <Post key={post.data.id} post={post.data} />
           ))}
